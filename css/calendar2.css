@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    background-color: lightyellow;
+}
+/* -- カレンダーの上の部分を背景と同じ色で埋める -- */
+p.WhiteWall {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 45%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightyellow;
+}
+/* -- カレンダー -- */
+div#calendar > table {
+    position: sticky;
+    top: 4%;
+    z-index: 3;
+
+    width: 90%;
+    height: 40%;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+div#calendar > table > tr > td.MtoS {
+    border: none;
+    background-color:#FFFFAA;
+}
+div#calendar > table > tr > td.MtoS > button {
+    padding: 5px 9px 5px 9px;
+    border: none;
+    background-color:#FFFFAA;
+
+    color:#777777;
+}
+div#calendar > table > tr > td.Sun {
+    border: none;
+    background-color:#DCDCDC;
+}
+div#calendar > table > tr > td.Sun > button {
+    padding: 5px;
+    border: none;
+    background-color:#DCDCDC;
+
+    color:#FFFFAA;
+}
+div#calendar > button#lastmonth {
+    position: fixed;
+    bottom: 17%;
+    right: 83px;
+    z-index: 2;
+
+    border-style: solid;
+    border-color:#777777;
+    background-color:#FFFFAA;
+
+    color:#777777;
+}
+div#calendar > button#nextmonth {
+    position: fixed;
+    bottom: 17%;
+    right: 25px;
+    z-index: 2;
+
+    border-style: solid;
+    border-color:#777777;
+    background-color:#FFFFAA;
+
+    color:#777777;
+}
+/* -- #TheDayEitList -- */
+ul#TheDayEitList {
+    position: relative;
+    top: 50px;
+    z-index: 1;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+li.eit {
+    width: 90%;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color:#FFFFAA;
+
+    color:#777777;
+}
+li.space {
+    width: 90%;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: lightyellow;
+}
+li.eit > p.eittype1 {
+    float: left;
+    clear: left;
+
+    margin: 3px 0 0 3px
+}
+li.eit > p.eittype2 {
+    float: left;
+
+    margin: 3px 0 0 0;
+    
+}
+li.eit > p.eitamount {
+    clear: left;
+
+    margin: 0 0 0 3px;
+}
+li.eit > p.eitmemo {
+    float: left;
+
+    margin: 0 0 0 3px;
+}
+/* -- #ShiftBar --*/
+ul#ShiftBar {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+ul#ShiftBar > li {
+    float: left;
+
+    width: 25%;
+}
+ul#ShiftBar > li > a > img {
+    width: 100%;
+}
+/* --ShiftBarの下を埋める-- */
+p.fillgap {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 2%;
+    margin: 0;
+    padding: 0;
+    background-color:#FFFFAA;
+
+    color:#FFFFAA;
+}

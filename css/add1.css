@@ -1,0 +1,16 @@
+/* -- 戻るボタン -- */
+a > button {
+    border-style: solid;
+    border-color: #000000;
+    background-color:#000000;
+
+    color:  #FFFFFF;
+}
+/* -- 追加ボタン -- */
+div > button#keepAcount {
+    border-style: solid;
+    border-color: #000000;
+    background-color:#000000;
+
+    color:  #FFFFFF;
+}
