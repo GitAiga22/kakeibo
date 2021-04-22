@@ -1,0 +1,233 @@
+body {
+    position: relative;
+    margin: 0;
+    background-image: url(../img1/レンガの壁.svg);
+    background-size: cover;
+}
+ul#shiftBar {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+ul#shiftBar > li {
+    width: 25%;
+    list-style: none;
+}
+ul#shiftBar > li > a > img {
+    width: 100%;
+    max-width: 110px;
+}
+ul#shiftBar > li > a {
+    display: block;
+}
+img#settingShift {
+    animation: flicker 5s linear infinite;
+}
+@keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: .9;
+    }
+  
+    6% {
+      opacity: .85;
+    }
+  
+    8% {
+      opacity: .95;
+    }
+  
+    10% {
+      opacity: .90;
+    }
+  
+    11% {
+      opacity: .922;
+    }
+  
+    12% {
+      opacity: .9;
+    }
+  
+    14% {
+      opacity: .95;
+    }
+  
+    16% {
+      opacity: .98;
+    }
+  
+    17% {
+      opacity: .9;
+    }
+  
+    19% {
+      opacity: .93;
+    }
+  
+    20% {
+      opacity: .99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: .94;
+    }
+  
+    28% {
+      opacity: .98;
+    }
+  
+    37% {
+      opacity: .93;
+    }
+  
+    38% {
+      opacity: .7;
+    }
+  
+    45% {
+      opacity: .96;
+    }
+  
+    46% {
+      opacity: 1;
+    }
+  
+    56% {
+      opacity: .9;
+    }
+  
+    60% {
+      opacity: .99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: .9;
+    }
+  
+    72% {
+      opacity: .95;
+    }
+  
+    93% {
+      opacity: .93;
+    }
+  
+    95% {
+      opacity: .95;
+    }
+  
+    97% {
+      opacity: .93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+#changeDesign {
+            width: 100px;
+            height: 100px;
+    
+            position: absolute;
+            top: 30%;
+            left: 50%;
+    
+            margin-top: -50px;
+            margin-left: -50px;
+    
+        border-radius:  50%;    
+        background   : linear-gradient(to bottom,  #4dffa6, #ffff1a);
+        
+}
+.rotationAnime {
+    animation: rotation 0.5s linear infinite; 
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#camereon {
+            width: 220px;
+            height: 220px;
+    
+            position: absolute;
+            top: 45%;
+            left: 37%;
+            animation: flicker 4s linear infinite;
+
+}
+#yadokari {
+  display: none;
+}
+#fadeLayer {
+    position:absolute;
+    top:0px;
+    left:0px;
+  
+    width:100%;
+    height:100%;
+  
+    background-color:#FFFFFF;
+    opacity: 0;
+    z-index:1;
+    pointer-events: none;
+}
+.fadeAnime {
+    animation: fade 2s linear;
+}
+  @keyframes fade {
+      from {
+          opacity: 0;
+      }
+      10% {
+          opacity: 0.1;
+      }
+      20% {
+          opacity: 0.2;
+      }
+      30% {
+          opacity: 0.3;
+      }
+      40% {
+          opacity: 0.4;
+      }
+      50% {
+          opacity: 0.5;
+      }
+      60% {
+          opacity: 0.6;
+      }
+      70% {
+          opacity: 0.7;
+      }
+      80% {
+          opacity: 0.8;
+      }
+      90% {
+          opacity: 0.9;
+      }
+      to {
+          opacity: 1.0;
+      }
+
+  }

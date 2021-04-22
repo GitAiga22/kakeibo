@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    background-image: url(../img1/レンガの壁.svg);
+    background-size: cover;
+}
+#addform {
+    position: relative;
+    top: 5.8%;
+}
+/* -- 戻るボタン -- */
+button > img {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 90px;
+    height: 90px;
+    animation: flicker 5s linear infinite;
+}
+a > button {
+    background: none;
+    border: none;
+}
+/* -- 追加ボタン -- */
+p > button#keepAcount {
+    border-style: solid;
+    border-color: none;
+    background: none;
+
+    color:  #C0C0C0;
+}
+p > label {
+    color: #C0C0C0;
+}
+@keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: .9;
+    }
+  
+    6% {
+      opacity: .85;
+    }
+  
+    8% {
+      opacity: .95;
+    }
+  
+    10% {
+      opacity: .90;
+    }
+  
+    11% {
+      opacity: .922;
+    }
+  
+    12% {
+      opacity: .9;
+    }
+  
+    14% {
+      opacity: .95;
+    }
+  
+    16% {
+      opacity: .98;
+    }
+  
+    17% {
+      opacity: .9;
+    }
+  
+    19% {
+      opacity: .93;
+    }
+  
+    20% {
+      opacity: .99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: .94;
+    }
+  
+    28% {
+      opacity: .98;
+    }
+  
+    37% {
+      opacity: .93;
+    }
+  
+    38% {
+      opacity: .7;
+    }
+  
+    45% {
+      opacity: .96;
+    }
+  
+    46% {
+      opacity: 1;
+    }
+  
+    56% {
+      opacity: .9;
+    }
+  
+    60% {
+      opacity: .99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: .9;
+    }
+  
+    72% {
+      opacity: .95;
+    }
+  
+    93% {
+      opacity: .93;
+    }
+  
+    95% {
+      opacity: .95;
+    }
+  
+    97% {
+      opacity: .93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}

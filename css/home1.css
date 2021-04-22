@@ -1,0 +1,577 @@
+body {
+    position: relative;
+    margin: 0;
+    background-image: url(../img1/レンガの壁.svg);
+    background-size: cover;
+}
+/* -- #addAcount -- */
+div#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
+    animation: flicker 4s linear infinite;
+}
+
+a#addAcount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    z-index: 20;
+}
+
+/* -- #homeList 最初の所（アカウントの名称/残金・ｖボタン・削除ボタン） -- */
+div#invisible {
+    height: 1px;
+    margin-bottom: 140px;
+}
+ul.acount > li.acountPlate> input {
+    float: left;
+    clear: left;
+
+    width: 50px; 
+    height: 50px;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+button.openeit {
+    float: left;
+
+    width: 200px;
+    height: 50px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    border-style: solid;
+    border-right: none;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+button.active {
+    float: left;
+
+    width: 25px;
+    height: 50px;
+    margin: 10px 0 0 0;
+    border-style: solid;
+    border-left: none;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+button.inactive {
+    float: left;
+
+    width: 25px;
+    height: 50px;
+    margin: 10px 0 0 0;
+    border-style: solid;
+    border-left: none;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+button.remove {
+    float: left;
+
+    width: 20px;
+    height: 50px;
+    margin: 10px 0 0 0;
+    border-style: solid;
+    border-left: none;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+/* -- #homeListの入力欄すべてに関して -- */
+ul.input {
+    list-style: none;
+}
+/* -- #homeListの支出入力欄 -- */
+li.expexp {
+    clear: left;
+    position: relative;
+    top: 10px;
+    left: 30px;
+
+    width: 200px;
+}
+li.expexp > button {
+    margin: 0;
+    border-style: solid;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+li.expexp > ul {
+    padding: 0;
+}
+li.expexp > ul > input,select,button {
+    width: 120px;
+    height: 22px;
+
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.expexp > ul > input.expmemo,button {
+    position: relative;
+    bottom: 2px;
+
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.expexp > ul > label > input {
+    position: relative;
+    bottom: 2px;
+
+    width: 100px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+/* -- #homeListの収入入力欄 -- */
+li.incinc {
+    position: relative;
+    top: 10px;
+    left: 30px;
+
+    width: 200px;
+}
+li.incinc > button {
+    margin: 0;
+    border-style: solid;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+li.incinc > ul {
+    padding: 0;
+}
+li.incinc > ul > input,select,button {
+    width: 120px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.incinc > ul > input.incmemo,button {
+    position: relative;
+    bottom: 2px;
+
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.incinc > ul > label > input {
+    position: relative;
+    bottom: 2px;
+
+    width: 100px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+/* -- #homeListの振替入力欄 -- */
+li.trstrs {
+    position: relative;
+    top: 10px;
+    left: 30px;
+
+    width: 200px;
+}
+li.trstrs > button {
+    margin: 0;
+    border-style: solid;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+li.trstrs > ul {
+    padding: 0;
+}
+li.trstrs > ul > input,select,button {
+    width: 120px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.trstrs > ul > input.trsmemo,button {
+    position: relative;
+    bottom: 4px;
+
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.trstrs > ul > label > input {
+    position: relative;
+    bottom: 2px;
+
+    width: 100px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.trstrs > ul > label > input.trsfee {
+    position: relative;
+    bottom: 4px;
+
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+/* -- #homeListの貸した入力欄 -- */
+li.lndlnd {
+    position: relative;
+    top: 10px;
+    left: 30px;
+
+    width: 200px;
+}
+li.lndlnd > button {
+    margin: 0;
+    border-style: solid;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+li.lndlnd > ul {
+    padding: 0;
+}
+li.lndlnd > ul > input,button {
+    width: 120px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.lndlnd > ul > input.lndmemo,button {
+    position: relative;
+    bottom: 2px;
+
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.lndlnd > ul > label > input {
+    position: relative;
+    bottom: 2px;
+
+    width: 100px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+/* -- #homeListの借りた入力欄 -- */
+li.brwbrw {
+    position: relative;
+    top: 10px;
+    left: 30px;
+
+    width: 200px;
+}
+li.brwbrw > button {
+    margin: 0;
+    border-style: solid;
+    border-color: #000000;
+    background-color: #000000;
+
+    color: #FFFFFF;
+}
+li.brwbrw > ul {
+    padding: 0;
+}
+li.brwbrw > ul > input,button {
+    width: 120px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.brwbrw > ul > input.brwmemo,button {
+    position: relative;
+    bottom: 2px;
+
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+li.brwbrw > ul > label > input {
+    position: relative;
+    bottom: 2px;
+
+    width: 100px;
+    height: 22px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+/* -- #lbList -- */
+ul#lbList {
+    clear: left;
+    position: relative;
+    top: 3%;
+    margin-bottom: 140px;
+
+    padding: 0;
+    list-style: none;
+}
+li.lb {
+    position: relative;
+    width: 295px;
+    height: 97px;
+    margin-top: 10px;
+    left: 35px;
+    padding: 5px;
+    background-color:#000000;
+
+    color: #FFFFFF;
+}
+li.lb > p.lbtype,p.lbdate {
+    float: left;
+    clear: left;
+
+    margin: 0;
+}
+li.lb > p.lbamount {
+    clear: left;
+
+    margin: 0;
+}
+li.lb > p.lbmemo {
+    clear: left;
+
+    margin: 0;
+}
+li.lb > button.lbrem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    border-width: thin;
+    background-color:  #777777;  
+}
+/* -- #eitList -- */
+#returnHome  {
+    width: 90px;
+    height: 90px;
+    animation: flicker 5s linear infinite;
+    display: none;
+}
+#returnHome > button {
+    border: none;
+    background: none;
+}
+ul#eitList {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+li.eit {
+    position: relative;
+
+    width: 295px;
+    height: 107px;
+    left: 35px;
+    margin-top: 5%;
+    padding: 5px;
+    background-color:#000000;
+
+    color: #FFFFFF;
+}
+li.eit > p.eitdate {
+    float: left;
+    clear: left;
+
+    margin: 0;
+}
+li.eit > p.eittype1 {
+    float: left;
+    clear: left;
+
+    margin: 0;
+}
+li.eit > p.eittype2 {
+    float: left;
+
+    margin: 0;
+}
+li.eit > p.eitamount {
+    clear: left;
+
+    margin: 0;
+}
+li.eit > p.eitmemo {
+    float: left;
+
+    margin: 0;
+}
+li.eit > button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    background-color:  #777777; 
+}
+ul#eitList > p.space {
+    height: 100px;
+}
+#noEitData {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 50px;
+    display: none;
+    animation: flicker 4s linear infinite;
+}
+
+
+/* -- #ShiftBar --*/
+ul#shiftBar {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+ul#shiftBar > li {
+    width: 25%;
+    list-style: none;
+}
+ul#shiftBar > li > a > img {
+    width: 100%;
+    max-width: 110px;
+}
+ul#shiftBar > li > a {
+    display: block;
+}
+img#homeShift {
+    animation: flicker 5s linear infinite;
+}
+@keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: .9;
+    }
+  
+    6% {
+      opacity: .85;
+    }
+  
+    8% {
+      opacity: .95;
+    }
+  
+    10% {
+      opacity: .90;
+    }
+  
+    11% {
+      opacity: .922;
+    }
+  
+    12% {
+      opacity: .9;
+    }
+  
+    14% {
+      opacity: .95;
+    }
+  
+    16% {
+      opacity: .98;
+    }
+  
+    17% {
+      opacity: .9;
+    }
+  
+    19% {
+      opacity: .93;
+    }
+  
+    20% {
+      opacity: .99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: .94;
+    }
+  
+    28% {
+      opacity: .98;
+    }
+  
+    37% {
+      opacity: .93;
+    }
+  
+    38% {
+      opacity: .7;
+    }
+  
+    45% {
+      opacity: .96;
+    }
+  
+    46% {
+      opacity: 1;
+    }
+  
+    56% {
+      opacity: .9;
+    }
+  
+    60% {
+      opacity: .99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: .9;
+    }
+  
+    72% {
+      opacity: .95;
+    }
+  
+    93% {
+      opacity: .93;
+    }
+  
+    95% {
+      opacity: .95;
+    }
+  
+    97% {
+      opacity: .93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}

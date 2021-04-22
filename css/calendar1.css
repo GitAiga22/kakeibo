@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    background-image: url(../img1/レンガの壁.svg);
+    background-size: cover;
+}
+/* -- カレンダーの上の部分を背景と同じ色で埋める -- */
+p.WhiteWall {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 45%;
+    margin-top: 0;
+    background-color: #231E1F;
+}
+/* -- カレンダー -- */
+div#calendar > table > tr#calendarTitle {
+    color: #E8EAEA;
+}
+div#calendar > table {
+    position: sticky;
+    top: 4%;
+    z-index: 3;
+
+    width: 90%;
+    height: 40%;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+div#calendar > table > tr > td.MtoS {
+    border: none;
+    background-color: #E8EAEA;
+}
+div#calendar > table > tr > td.MtoS > button {
+    padding: 5px 9px 5px 9px;
+    border: none;
+    background-color: #E8EAEA;
+
+    color: #231E1F;
+}
+div#calendar > table > tr > td.Sun {
+    border: none;
+    background-color: #E8EAEA;
+}
+div#calendar > table > tr > td.Sun > button {
+    padding: 5px;
+    border: none;
+    background-color: #E8EAEA;
+
+    color: #231E1F;
+}
+button#lastmonth {
+  position: fixed;
+  left: 230px;
+  bottom: 120px;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 2;
+  animation: flicker 5s linear infinite;
+}
+button#nextmonth {
+position: fixed;
+left: 270px;
+bottom: 120px;
+background: none;
+border: none;
+outline: none;
+z-index: 2;
+animation: flicker 4s linear infinite;
+}
+button > img {
+width: 50px;
+height: 40px;
+}
+/* -- #TheDayEitList -- */
+#noThedayData {
+  width: 60%;
+  height: 35%;
+  position: relative;
+  top: 50px;
+  animation: flicker 4s linear infinite;
+}
+ul#TheDayEitList {
+    position: relative;
+    top: 50px;
+    z-index: 1;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+li.eit {
+    width: 90%;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color:#000000;
+
+    color: #FFFFFF;
+}
+li.space {
+    width: 90%;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+li.eit > p.eittype1 {
+    float: left;
+    clear: left;
+
+    margin: 3px 0 0 3px
+}
+li.eit > p.eittype2 {
+    float: left;
+
+    margin: 3px 0 0 0;
+    
+}
+li.eit > p.eitamount {
+    clear: left;
+
+    margin: 0 0 0 3px;
+}
+li.eit > p.eitmemo {
+    float: left;
+
+    margin: 0 0 0 3px;
+}
+ul#shiftBar {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    z-index: 10;
+}
+ul#shiftBar > li {
+    width: 25%;
+    list-style: none;
+}
+ul#shiftBar > li > a > img {
+    width: 100%;
+    max-width: 110px;
+}
+ul#shiftBar > li > a {
+    display: block;
+}
+img#calendarShift {
+    animation: flicker 5s linear infinite;
+}
+@keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: .9;
+    }
+  
+    6% {
+      opacity: .85;
+    }
+  
+    8% {
+      opacity: .95;
+    }
+  
+    10% {
+      opacity: .90;
+    }
+  
+    11% {
+      opacity: .922;
+    }
+  
+    12% {
+      opacity: .9;
+    }
+  
+    14% {
+      opacity: .95;
+    }
+  
+    16% {
+      opacity: .98;
+    }
+  
+    17% {
+      opacity: .9;
+    }
+  
+    19% {
+      opacity: .93;
+    }
+  
+    20% {
+      opacity: .99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: .94;
+    }
+  
+    28% {
+      opacity: .98;
+    }
+  
+    37% {
+      opacity: .93;
+    }
+  
+    38% {
+      opacity: .7;
+    }
+  
+    45% {
+      opacity: .96;
+    }
+  
+    46% {
+      opacity: 1;
+    }
+  
+    56% {
+      opacity: .9;
+    }
+  
+    60% {
+      opacity: .99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: .9;
+    }
+  
+    72% {
+      opacity: .95;
+    }
+  
+    93% {
+      opacity: .93;
+    }
+  
+    95% {
+      opacity: .95;
+    }
+  
+    97% {
+      opacity: .93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}

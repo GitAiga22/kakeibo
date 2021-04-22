@@ -1,0 +1,158 @@
+body {
+    position: relative;
+    margin: 0;
+    background-size: cover;
+    background-image: url(../img1/海.svg);
+}
+/* -- カレンダーの上の部分を背景と同じ色で埋める -- */
+p.WhiteWall {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 45%;
+    margin-top: 0;
+    background-color: #00FFBC;
+    opacity: 0.8;
+}
+/* -- カレンダー -- */
+div#calendar > table > tr#calendarTitle {
+    color: #FF00CF;
+}
+div#calendar > table {
+    position: sticky;
+    top: 4%;
+    z-index: 3;
+
+    width: 90%;
+    height: 40%;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+div#calendar > table > tr > td.MtoS {
+    border: none;
+    background-color: #10E9FF;
+}
+div#calendar > table > tr > td.MtoS > button {
+    padding: 5px 9px 5px 9px;
+    border: none;
+    background-color: #10E9FF;
+
+    color: #FF00CF;
+}
+div#calendar > table > tr > td.Sun {
+    border: none;
+    background-color: #FF00CF;
+}
+div#calendar > table > tr > td.Sun > button {
+    padding: 5px;
+    border: none;
+    background-color: #FF00CF;
+
+    color: #10E9FF;
+}
+button#lastmonth {
+  position: fixed;
+  left: 230px;
+  bottom: 120px;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 2;
+}
+button#nextmonth {
+position: fixed;
+left: 270px;
+bottom: 120px;
+background: none;
+border: none;
+outline: none;
+z-index: 2;
+}
+button > img {
+width: 50px;
+height: 40px;
+}
+/* -- #TheDayEitList -- */
+#noThedayData {
+  width: 50%;
+  height: 40%;
+  position: relative;
+  top: 50px;
+}
+ul#TheDayEitList {
+    position: relative;
+    top: 50px;
+    z-index: 1;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+li.eit {
+    width: 90%;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color:#00FFBC;
+
+    color: #0D47FF;
+    font-weight: bold;
+    opacity: 0.5;
+}
+li.space {
+    width: 90%;
+    height: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+li.eit > p.eittype1 {
+    float: left;
+    clear: left;
+
+    margin: 3px 0 0 3px
+}
+li.eit > p.eittype2 {
+    float: left;
+
+    margin: 3px 0 0 0;
+    
+}
+li.eit > p.eitamount {
+    clear: left;
+
+    margin: 0 0 0 3px;
+}
+li.eit > p.eitmemo {
+    float: left;
+
+    margin: 0 0 0 3px;
+}
+ul#shiftBar {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    z-index: 10;
+}
+ul#shiftBar > li {
+    width: 25%;
+    list-style: none;
+}
+ul#shiftBar > li > a > img {
+    width: 100%;
+    max-width: 110px;
+}
+ul#shiftBar > li > a {
+    display: block;
+}
+

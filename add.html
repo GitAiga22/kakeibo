@@ -1,0 +1,38 @@
+<html lang="ja">
+<link id="LOGO" rel="icon" href="img1/かけいぼロゴ.svg">
+<link id="APPLOGO" rel="apple-touch-icon" sizes="180x180" href="img1/かけいぼロゴ.svg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAKEIBO-ADD</title>
+    <link rel="stylesheet" href="css/add1.css" id="addCss">
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/home.js"></script>  
+</head>
+<body>
+    <div id="addForm">
+    <p>
+        <label>&emsp;タイプ&emsp;&emsp;
+        <select id="type">
+        　<option value="現金">現金</option>
+        　<option value="銀行">銀行</option>
+        　<option value="クレジット">クレジット</option>
+        　<option value="電子マネー">電子マネー</option>
+          <option value="その他">その他</option>
+        </select></label>
+    </p>
+    <p>
+        <label>&emsp;名称&emsp;&emsp;&emsp;
+        <input type="text" id="newname" maxlength="10" placeholder="10文字まで" >
+        </label>  
+    </p>
+    <p>
+        <label>&emsp;初期残高&emsp;
+        <input type="number" id="firstmoney" placeholder="金額" value=0>
+        &nbsp;円</label>
+    </p>
+    <p>&emsp;<button id="keepAcount">保存</button></p>
+    <a href="home.html"><button><img src="img1/矢印.svg" alt="HOMEに戻る"></button></a>
+    </div>    
+</body>
+</html>
